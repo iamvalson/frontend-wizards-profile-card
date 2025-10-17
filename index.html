@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stage 0 Task — Testable Profile Card</title>
+    <link rel="stylesheet" href="./style/main.css" />
+    <script
+      src="https://kit.fontawesome.com/cfe91eaec4.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <body>
+    <article
+      data-testid="test-profile-card"
+      id="card-container"
+      aria-label="Profile card"
+    >
+      <figure>
+        <img
+          src="https://iamvalson.github.io/blog-site/team/valentine.jpeg"
+          alt="Image of Owai Divine Valentine"
+          data-testid="test-user-avatar"
+        />
+      </figure>
+
+      <div id="content-container">
+        <header>
+          <h1 data-testid="test-user-name">Owai Divine Valentine</h1>
+          <p data-testid="test-user-bio" id="bio">
+            Frontend and mobile developer with a passion for creating beautiful,
+            accessible user interfaces. I love working with React, React Native,
+            TypeScript and modern web technologies. When I'm not coding, you'll
+            find me reading or going for walks.
+          </p>
+        </header>
+
+        <p data-testid="test-user-time" id="user-time"></p>
+
+        <ul
+          data-testid="test-user-social-links"
+          id="social-container"
+          aria-label="Social Links"
+        >
+          <li class="social-links">
+            <a
+              href="https://x.com/earthtovalentin"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+            >
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </li>
+          <li class="social-links">
+            <a
+              href="https://instagram.com/earthtovalentinee"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li class="social-links">
+            <a
+              href="https://www.linkedin.com/in/divine-owai-22823b2ab"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li class="social-links">
+            <a
+              href="https://github.com/iamvalson/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+        </ul>
+
+        <section
+          data-testid="test-user-hobbies"
+          aria-labelledby="hobbies-title"
+        >
+          <h2 id="hobbies-title">Hobbies</h2>
+          <ul>
+            <li>Building side projects</li>
+            <li>Learning new frameworks</li>
+            <li>Going for walks</li>
+            <li>Researching tech topics</li>
+            <li>Watching rocket launches</li>
+          </ul>
+        </section>
+
+        <section
+          data-testid="test-user-dislikes"
+          aria-labelledby="dislikes-title"
+        >
+          <h2 id="dislikes-title">Dislikes</h2>
+          <ul>
+            <li>Getting merge conflicts</li>
+            <li>Code not running on the first try</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+
+    <script src="main.js"></script>
+  </body>
+</html>
