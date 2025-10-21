@@ -1,19 +1,18 @@
-# 🌟 Stage 0 Task — Testable Profile Card
+# 🧩 Stage 0 — Testable Profile Card
 
-This project is my submission for the **Frontend Wizards Stage 0 Task**.  
-It is a responsive, testable profile card built with **HTML, CSS, and JavaScript** following all the given requirements.
+A responsive, testable profile card built with **HTML**, **CSS**, and **JavaScript**, following all required guidelines.
 
 ---
 
 ## 🚀 Features
 
-- Displays accurate time in **milliseconds (`Date.now()`)** — updates every 100ms.
-- Avatar accepts a **URL** or an uploaded image (and displays as a URL).
+- Displays accurate time in **milliseconds (`Date.now()`)**, updating every 100ms.
+- Avatar supports **image URL** or **uploaded image**.
 - Uses **semantic HTML** (`article`, `section`, `header`, `figure`, etc.).
-- Social links open in a **new tab** with `target="_blank"` and `rel="noopener noreferrer"`.
+- Social links open in new tabs with `target="_blank"` and `rel="noopener noreferrer"`.
 - Fully **keyboard-accessible** with visible focus outlines.
-- Responsive layout built with **Flexbox**.
-- Clean, modern UI with hover effects and shadow transitions.
+- **Responsive layout** built with Flexbox.
+- Modern UI with smooth hover effects and shadow transitions.
 
 ---
 
@@ -22,6 +21,70 @@ It is a responsive, testable profile card built with **HTML, CSS, and JavaScript
 - **HTML5**
 - **CSS3**
 - **Vanilla JavaScript (ES6)**
+
+---
+
+# 🎯 Stage 1 — Contact & About Pages
+
+Stage 1 extends the Stage 0 project into a **multi-page application** with form validation and semantic structure.
+
+---
+
+## 📄 Pages to Implement
+
+### 1️⃣ Contact Us Page
+
+A form that includes:
+
+**Fields** (all required, with `data-testid` attributes):
+- Full name — `test-contact-name`
+- Email — `test-contact-email`
+- Subject — `test-contact-subject`
+- Message — `test-contact-message`
+- Submit button — `test-contact-submit`
+
+**Validation Rules:**
+- All fields must be filled.
+- Email must be valid.
+- Message must be at least 10 characters.
+- Error messages tied to inputs via `aria-describedby`.
+- Success message (`test-contact-success`) shown after valid submission.
+- Fully accessible and keyboard navigable.
+
+---
+
+### 2️⃣ About Me Page
+
+A reflective page sharing personal insights.
+
+**Required sections** (each with `data-testid`):
+- Bio — `test-about-bio`
+- Goals in this program — `test-about-goals`
+- Areas of low confidence — `test-about-confidence`
+- Note to future self — `test-about-future-note`
+- Extra thoughts — `test-about-extra`
+
+**Uses semantic structure:**
+```html
+<main data-testid="test-about-page">
+  <section> ... </section>
+</main>
+Headings (`<h2>`, `<h3>`) for clarity.
+
+Fully responsive and accessible.
+
+---
+
+## 🧩 Accessibility & Semantics
+
+Both stages follow accessibility standards:
+
+- Proper use of `<label>` with `for` attributes.  
+- Error messages connected with `aria-describedby`.  
+- Logical heading structure and semantic tags.  
+- Keyboard navigation with visible focus indicators.
+
+
 
 ---
 
