@@ -22,6 +22,7 @@ function handleSubmit(event) {
   if(!name){
     nameError.innerText = "Full name is required";
     nameError.style.display = "block"
+    isValid = false;
   } else {
     nameError.style.display = "none"
   }
@@ -29,6 +30,7 @@ function handleSubmit(event) {
   if(!email){
     emailError.innerText = "Email is required";
     emailError.style.display = "block"
+    isValid = false;
   } else{
     const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if(pattern.test(email) !== true){
@@ -42,6 +44,7 @@ function handleSubmit(event) {
   if(!subject){
     subjectError.innerText = "Subject is required";
     subjectError.style.display = "block"
+    isValid = false;
   } else {
     subjectError.style.display = "none"
   }
@@ -49,6 +52,7 @@ function handleSubmit(event) {
   if(!message){
     messageError.innerText = "Message is required";
     messageError.style.display = "block"
+    isValid = false;
   } else{
     if(message.length < 10){
         isValid = false;
