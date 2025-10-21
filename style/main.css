@@ -11,10 +11,12 @@
 body {
   background-color: #f9fafb;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  padding: 2rem 1rem;
+  align-items: center;
   color: #111827;
 }
+
 
 /* --- CARD CONTAINER --- */
 #card-container {
@@ -22,6 +24,7 @@ body {
   flex-direction: row;
   gap: 1.5rem;
   padding: 2rem;
+  margin: 2rem 1rem;
   background-color: #fff;
   max-width: 56rem;
   border-radius: 1.25rem;

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stage 1 Task</title>
+    <link rel="stylesheet" href="./style/navbar.css" />
+    <link rel="stylesheet" href="./style/contact.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <h2><a href="index.html">ODV :)</a></h2>
+      <div id="horizontal-nav">
+        <ul id="nav-link-container">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+      </div>
+      
+      <div id="mobile-menu-bar">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu Drawer -->
+    <div id="mobile-menu">
+        <div id="close-menu">
+            <span class="close" id="left-stroke"></span>
+            <span class="close" id="right-stroke"></span>
+        </div>
+        
+        <ul id="mobile-menu-link-container">
+        <li>
+          <a href="index.html">Home</a>
+          <span>></span>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+          <span>></span>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+          <span>></span>
+        </li>
+      </ul>
+    </div>
+    <main id="main">
+      <header>
+        <h2>Contact Us</h2>
+        <p>Have a question or want to work together? Send me a message!</p>
+      </header>
+
+      <form id="form">
+        <label for="name">Full Name <span class="required"> *</span></label>
+        <div class="input-section">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            data-testid="test-contact-name"
+            aria-describedby="name-error"
+            placeholder="John Doe"
+          />
+          <p id="name-error" class="error" data-testid="test-contact-error-name"></p>
+        </div>
+
+        <label for="email">Email <span class="required"> *</span></label>
+        <div class="input-section">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            data-testid="test-contact-email"
+            aria-describedby="email-error"
+            placeholder="johndoe@example.com"
+          />
+          <p id="email-error" class="error" data-testid="test-contact-error-email"></p>
+        </div>
+
+        <label for="subject">Subject <span class="required"> *</span></label>
+        <div class="input-section">
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            data-testid="test-contact-subject"
+            aria-describedby="subject-error"
+            placeholder="Project Inquiry"
+          />
+          <p id="subject-error" class="error" data-testid="test-contact-error-subject"></p>
+        </div>
+
+        <label for="message">Message <span class="required"> *</span></label>
+        <div class="input-section">
+          <textarea
+            rows="4"
+            id="message"
+            data-testid="test-contact-message"
+            aria-describedby="message-error"
+            placeholder="Tell me more about your project or question"
+          ></textarea>
+          <p id="message-error" class="error" data-testid="test-contact-error-message"></p>
+        </div>
+
+
+        <p id="success-message" data-testid="test-contact-success">Form sent successfully!</p>
+
+        <button type="submit" data-testid="test-contact-submit" id="submit-btn">
+          Send Message
+        </button>
+
+        <hr />
+
+        <p id="direct-mail">
+          You can also reach me directly at
+          <a href="mailto:itzvalsonwrld@gmail.com">itzvalsonwrld@gmail.com</a>
+        </p>
+      </form>
+    </main>
+
+    <script src="./scripts/validate.js"></script>
+    <script src="./scripts/navbar.js"></script>
+  </body>
+</html>

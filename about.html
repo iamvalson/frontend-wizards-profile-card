@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stage 1 Task</title>
+    <link rel="stylesheet" href="./style/about.css" />
+    <link rel="stylesheet" href="./style/navbar.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <h2><a href="index.html">ODV :)</a></h2>
+      <div id="horizontal-nav">
+        <ul id="nav-link-container">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div id="mobile-menu-bar">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu Drawer -->
+    <div id="mobile-menu">
+      <div id="close-menu">
+        <span class="close" id="left-stroke"></span>
+        <span class="close" id="right-stroke"></span>
+      </div>
+
+      <ul id="mobile-menu-link-container">
+        <li>
+          <a href="index.html">Home</a>
+          <span>></span>
+        </li>
+        <li>
+          <a href="index.html">About</a>
+          <span>></span>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+          <span>></span>
+        </li>
+      </ul>
+    </div>
+
+    <header>
+      <h2>About Me</h2>
+      <p>My journey as a frontend developer</p>
+    </header>
+
+    <main data-testid="test-about-page" id="main">
+      <section class="content-section" data-testid="test-about-bio">
+        <h3>My Story</h3>
+        <p>
+            I've always been fascinated by the intersection of design and technology. My journey into frontend development began three years ago when I built my first website which was a simple portfolio page that sparked a passion for creating beautiful, functional user experiences.
+        </p>
+        <p>
+            Since then, I've immersed myself in learning modern web technologies like React, TypeScript, and Tailwind CSS. I believe that great frontend development isn't just about writing code, it's about understanding user needs, creating accessible interfaces, and continuously improving the craft.
+        </p>
+        <p>
+            Outside of coding, I'm an advocate for open-source software and love contributing to projects that make the web a better place for everyone.
+        </p>
+      </section>
+
+      <section class="content-section" data-testid="test-about-goals">
+        <h3>My Goals</h3>
+        <p>
+            My primary goal is to deepen my understanding of advanced React patterns and state management solutions. I want to build more complex, scalable applications that can handle real-world use cases.
+        </p>
+        <ul>
+            <li>Master TypeScript and advanced type systems</li>
+            <li>Learn performance optimization techniques</li>
+            <li>Build accessible, inclusive web applications</li>
+            <li>Understand modern testing strategies and tools</li>
+            <li>Contribute to meaningful open-source projects</li>
+        </ul>
+        <p>
+            I also want to improve my collaboration skills and learn best practices for working in distributed teams, as I believe great software is built by great teams.
+        </p>
+      </section>
+
+      <section class="content-section" data-testid="test-about-confidence">
+        <h3>Areas of Growth</h3>
+        <p>
+            I believe in being honest about areas where I need to grow. Here are some challenges I'm actively working to overcome:
+        </p>
+        <ul>
+            <li><b>Backend integration:</b> While I'm comfortable with frontend code, I sometimes struggle with understanding complex API architectures and backend concepts.</li>
+            <li><b>System design:</b> I'm still building confidence in architecting large-scale applications from scratch without a clear blueprint.</li>
+            <li><b>CSS animations:</b> While I can implement basic animations, creating smooth, performant custom animations is still a learning curve</li>
+            <li><b>Browser compatibility:</b> Debugging cross-browser issues can be frustrating, and I'm working on building a better mental model for how different browsers handle CSS and JavaScript</li>
+        </ul>
+        <p>
+            I view these areas not as weaknesses, but as opportunities for growth. Each challenge is a stepping stone toward becoming a more well-rounded developer.
+        </p>
+      </section>
+      <section class="content-section" id="future-self" data-testid="test-about-future-note">
+        <h3>Note to Future Self</h3>
+        <p>
+            <i>"Dear future me,</i>
+        </p>
+        <p>
+            Remember this moment: the excitement, the uncertainty, the eagerness to learn. You're embarking on a journey that will challenge you, but also transform you into the developer you've always wanted to be.
+        </p>
+        <p>
+            Don't be afraid to ask questions. Don't be discouraged by bugs or errors, they're not failures, they're lessons. Celebrate small wins: every component you build, every concept you grasp, every line of clean code you write.
+        </p>
+        <p>
+            Stay curious. Stay humble. And most importantly, remember why you started: to create things that make people's lives easier and more enjoyable.
+        </p>
+        <p>
+            You've got this. <i>Keep coding, keep learning, keep growing."</i>
+        </p>
+      </section>
+      <section class="content-section" data-testid="test-about-extra">
+        <h3>Extra Thoughts</h3>
+        <p>
+            The tech industry moves fast, and it can feel overwhelming at times. I've learned that it's okay not to know everything. What matters is having a strong foundation and the ability to learn and adapt quickly.
+        </p>
+        <p>
+            I'm particularly excited about the future of web development—technologies like Web Assembly, server components, and AI-assisted development are opening up new possibilities. But I also believe in focusing on fundamentals: semantic HTML, accessible design, and writing maintainable code will always be relevant.
+        </p>
+        <p>
+            My hope is that through this program, I'll not only become a better developer but also a better collaborator, communicator, and problem-solver. The goal isn't just to write code, it's to build solutions that matter.
+        </p>
+      </section>
+    </main>
+
+    <script src="./scripts/navbar.js"></script>
+  </body>
+</html>
